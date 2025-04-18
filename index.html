@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inderjit Singh - Marketing Executive</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Inderjit Singh - Strategic Marketing Executive Proficient in Digital Marketing, Leads Generation, Brand Growth, and Market Research .">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="Marketer Inderjit Singh,Inderjit Singh Marketer ,Portfolio Inderjit Singh ,Portfolio - Inderjit Singh ,Marketing Executive Inderjit Singh, Inderjit Singh Marketing Executive, Inderjit Singh ME, ME Inderjit Singh">
+    <meta property="og:title" content="Inderjit Singh - Marketing Executive">
+    <meta property="og:image" content="hero-img.png">
+    <meta property="og:description" content="Inderjit Singh - Strategic Marketing Executive Proficient in Digital Marketing, Leads Generation. Brand Growth, and Market Research .">
+    <meta property="og:url" content="https://portfolio-inderjitsingh.github.io/Home/">
+    <meta property="og:type" content="website">
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+
+    <meta name="google-site-verification" content="lJNOHbWVSa26I-f6UzsPcGddWXjJbbC27Y3iRTstQh4" />
+
+
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Inderjit Singh",
+          "alternateName": ["Marketer Inderjit Singh", "Marketing Executive Inderjit Singh"],
+          "jobTitle": "Marketing Executive",
+          "url": "https://Porfolio-InderjitSingh.Github.io/Home/",
+          "sameAs": [
+            "https://www.linkedin.com/in/inderjit-singh-digital-marketer",
+            "https://www.facebook.com/profile.php?id=61558380033544",
+            "https://www.instagram.com/inderjit_singh.__"
+          ],
+          "description": "Inderjit Singh is a professional marketing executive specializing in digital marketing, campaign management, and brand strategy."
+        }
+        </script>
+
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Inderjit Singh</div>
+        <button class="menu-button" aria-label="Toggle Menu" aria-expanded="false" onclick="toggleMenu()">
+          <span class="menu-icon" id="menu-icon"><img src="Icons/menu.png" alt="Menu"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="Pages/MyWork.html">Projects</a></li>
+            <li><a href="Pages/error.html">Clients</a></li>
+            <li><a href="Pages/Services.html">Services</a></li>
+            <li><a href="Pages/About-Me.html">About</a></li>
+            <li> <button> <a href="https://wa.me/918360692813?text=Hello%20there!" target="_blank" class="nav-contact-button">CONTACT ME</a> </button> </li> 
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <p class="job">____<br>MARKETING EXECUTIVE</p>
+                <h1>Helping Business In Increasing Revenue & Customers.</h1>
+                <p>Highly Proficient In Executing Marketing Strategies That Generates Quality Leads and Revenue .</p>
+    
+               <div class="cta-container">
+                    <button> <a href="mailto:inderr1727@gmail.com?subject=Hey%20%2C%20Lets%20Start%20A%20Conversation" class="cta-button primary">Let's Connect →</a> </button>
+                    <div class="social-icons">
+                      <a href="https://wa.me/918360692813?text=Hello%20there!" target="_blank"> <img src="Icons/Whatsapp.png" alt="Icon 1"> </a>
+                      <a href="https://www.instagram.com/i__inderjit_singh" target="_blank"> <img src="Icons/instagram.png" alt="Icon 2"> </a>
+                      <a href="https://www.linkedin.com/in/ME-inderjit-singh" target="_blank"> <img src="Icons/linkedin.png" alt="Icon 3"> </a>
+                      <a href="https://www.facebook.com/profile.php?id=61558380033544" target="_blank"> <img src="Icons/twitter.png" alt="Icon 4"> </a>
+                    </div>
+               </div>
+                
+            </div>
+    
+            <div class="profile-image">
+                <img src="hero-img.png" alt="Marketer Inderjit Singh Image">
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        const menu = document.querySelector('.nav-links');
+        const menuButton = document.querySelector('.menu-button');
+        const menuIcon = document.getElementById('menu-icon');
+      
+        // Toggle menu with button
+        function toggleMenu(event) {
+          event.stopPropagation(); // prevent event from bubbling to document
+          const isOpen = menu.classList.toggle('show-menu');
+          menuButton.setAttribute('aria-expanded', isOpen);
+      
+          // Swap icon
+          menuIcon.innerHTML = '';
+          const iconImg = document.createElement('img');
+          iconImg.src = isOpen ? 'Icons/close.png' : 'Icons/menu.png';
+          iconImg.alt = isOpen ? 'Close Menu' : 'Menu';
+          menuIcon.appendChild(iconImg);
+        }
+      
+        menuButton.addEventListener('click', toggleMenu);
+      
+        // Click outside to close menu
+        document.addEventListener('click', function (event) {
+          const isOpen = menu.classList.contains('show-menu');
+          const isMobile = window.innerWidth <= 768;
+      
+          const clickedOutside =
+            !menu.contains(event.target) &&
+            !menuButton.contains(event.target) &&
+            !menuIcon.contains(event.target);
+      
+          if (isOpen && clickedOutside && isMobile) {
+            menu.classList.remove('show-menu');
+            menuButton.setAttribute('aria-expanded', 'false');
+      
+            // Reset to menu icon
+            menuIcon.innerHTML = '';
+            const iconImg = document.createElement('img');
+            iconImg.src = 'Icons/menu.png';
+            iconImg.alt = 'Menu';
+            menuIcon.appendChild(iconImg);
+          }
+        });
+    </script>
+
+
+
+
+
+    <section class="specialization">
+        <div class="section-heading">
+            <h2>Marketing &nbsp;Skills &nbsp;I&nbsp; Specialized :</h2>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="card">
+                    <div> <a href="#" class="inner-card"> </a>
+                       <h3>Digital Marketing</h3>
+                       <div class="line"></div>
+                       <p>Driving Growth Through Targeted Online Strategies.</p>
+                       <!-- <a id="Readmore" href="#">Read more ....</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <div> <a href="#" class="inner-card"> </a>
+                       <h3>Brand Management</h3>
+                       <div class="line"></div>
+                       <p>Building and Maintaining Strong Brand Identities.</p>
+                       <!-- <a id="Readmore" href="#">Read more ....</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <div> <a href="#" class="inner-card"> </a>
+                       <h3>Brand Advertising</h3>
+                       <div class="line"></div>
+                       <p>Crafting Impactful Ads Concepts, Visual & Copy.</p>
+                       <!-- <a id="Readmore" href="#">Read more ....</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <div> <a href="#" class="inner-card"> </a>
+                       <h3>Market Research</h3>
+                       <div class="line"></div>
+                       <p>Gathering Insights to Drive Business Strategies.</p>
+                       <!-- <a id="Readmore" href="#">Read more ....</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <div> <a href="#" class="inner-card"> </a>
+                       <h3 class="card-h">Strategy Planning</h3>
+                       <div class="line"></div>
+                       <p>Crafting Long-Term Business Strategies for Success.</p>
+                       <!-- <a id="Readmore" href="#">Read more ....</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="Pages/MyWork.html" class="services-button">My Work & Projects:</a>
+    </section>
+
+    
+</body>
+</html>
+
+
+
+
+<body>
+    <section class="about-main">
+        <section class="about-section">
+            <div class="content">
+                <div class="image-container">
+                    <img src="hero.png" alt="Professional Portrait"> </div>
+                <div class="text-content">
+                    <p class="about-subheading">ABOUT ME</p>
+                    <h2>I'm Inderjit Singh ,<br>Your Growth Partner.</h2>
+                    <p class="description">
+                    I am a Passionate and Performance-Driven Marketing Executive with a Deep Understanding of Digital Trends, Consumer Psychology, and Brand Positioning .   </p>
+                    <a href="Pages/About-Me.html" class="more-link">More About Me </a>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
+
+
+
+<body>
+
+    <section class="contact">
+        <div class="container-4">
+            <p class="contact-subheading">TO CONNECT</p>
+            <h2>Let’s get in Touch</h2>
+            <p class="supporting-text">Need Marketing Advice or Have Questions?<br>I’m here to help you.</p>
+            <button> <a href="https://wa.me/918360692813?text=Hello%20there!" target="_blank" class="contact-button-2">
+                Contact Me :</a>
+               <!-- <div class="arrow-icon">↗</div> -->
+            </button>
+        </div>
+    </section>
+
+</body>
+  
+
+    <footer>
+        <div class="container-5">
+            <div class="section branding">
+                <!-- <span class="icon">⚖️</span> -->
+                <p class="name">Inderjit Singh</p>
+                <p class="description">A Certified Marketing Executive and Brand Manager. Passaionate and Performance-Driven Marketer.</p>
+            </div>
+
+            <div class="section navigation">
+              <h3>Pages</h3>
+              <ul>
+                <li><a href="index.html">HomePage</a></li>
+                <li><a href="Pages/About-Me.html">About Me</a></li>
+                <li><a href="Pages/MyWork.html">My Work</a></li>
+                <li><a href="Pages/error.html">Contact</a></li>
+                <li><a href="Pages/error.html">404</a></li>
+              </ul>
+            </div>
+
+            <div class="section contact-info">
+                <h3>Contact</h3>
+                <p class="email">inderr1727@gmail.com</p>
+                <p class="phone">+91 83606-92813</p>
+                <p class="phone">Thank You For Visiting Website.</p>
+
+              <div class="social-icons-2">
+                <a href="https://wa.me/918360692813?text=Hello%20there!" target="_blank"> <img src="Icons/Whatsapp.png" alt="Icon 1"> </a>
+                <a href="https://www.instagram.com/i__inderjit_singh" target="_blank"> <img src="Icons/instagram.png" alt="Icon 2"> </a>
+                <a href="https://www.linkedin.com/in/ME-inderjit-singh" target="_blank"> <img src="Icons/linkedin.png" alt="Icon 3"> </a>
+                <a href="https://www.facebook.com/profile.php?id=61558380033544" target="_blank"> <img src="Icons/twitter.png" alt="Icon 4"> </a>
+              </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>  </body>
+</html>
