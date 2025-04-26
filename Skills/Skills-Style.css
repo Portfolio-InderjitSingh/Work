@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9ff;
+    color: #1E293B;
+  }
+  
+  .services-section {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .services-container {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #f8f9ff;
+    border-radius: 2rem;
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); */
+    padding: 0px 15px;
+    text-align: center;
+  }
+  
+  .services-title {
+    font-size: 2.2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1E293B;
+  }
+  
+  .services-subtitle {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 50px;
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 40px;
+    margin-bottom: 80px;
+    text-align: left;
+  }
+  
+  .service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    color: #1E293B;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #222222;
+  }
+  
+
+  .services-button {
+    display: block;
+    margin: 0 auto;
+    margin: -1.5rem 2rem 6rem 2rem;
+    background-color:#1E293B;
+    color: white;
+    font-family: var(--font-nunito);
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    word-spacing: 0.24rem;
+    font-size: 1rem; /* converted rem values */
+    padding: 0.8rem 5.2rem; /* converted rem values */
+    border: 0.24rem solid;
+    text-decoration: none;
+    letter-spacing: 0.08rem;
+    word-spacing: 0.4rem;
+    text-align: center;
+    border-radius: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1rem rgba(30, 58, 102, 0.2); /* More visible shadow */
+    transition: background-color 0.04s ease;
+  }
+
+  .services-button:hover {
+    background-color: #f8fbff; /* Darker blue */
+    color: var(--colour-main);
+  }
+  

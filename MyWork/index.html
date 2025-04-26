@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Work | Inderjit Singh</title>
+  <link rel="stylesheet" href="MyWork.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <section class="work-section">
+    <div class="work-container">
+      <h1 class="work-title">My Work</h1>
+      <div class="work-grid">
+
+        <!-- Work Card with Slider -->
+        <div class="work-card">
+          <div class="slider-container">
+            <div class="slider">
+              <img src="Images PJ 1/1.png" alt="Project - Market Research Image 1" />
+              <img src="Images PJ 1/2.png" alt="Project - Market Research Image 2" />
+              <img src="Images PJ 1/3.png" alt="Project - Market Research Image 3" />
+              <img src="Images PJ 1/4.png" alt="Project - Market Research Image 4" />
+              <img src="Images PJ 1/5.png" alt="Project - Market Research Image 5" />
+              <img src="Images PJ 1/6.png" alt="Project - Market Research Image 6" />
+              <img src="Images PJ 1/7.png" alt="Project - Market Research Image 7" />
+              <img src="Images PJ 1/8.png" alt="Project - Market Research Image 8" />
+            </div>
+            <button class="nav left">&lt;</button>
+            <button class="nav right">&gt;</button>
+          </div>
+          <div class="work-content">
+            <h3>Market Research :</h3>
+            <p>Gathering and Analysing Data for Better Marketing Decisions.</p>
+          </div>
+        </div>
+
+        <!-- Add more cards below -->
+
+        <div class="work-card">
+          <div class="slider-container">
+            <div class="slider">
+              <img src="Images PJ 2/1.png" alt="Project - Brand Improvement Image 1" />
+              <img src="Images PJ 2/2.png" alt="Project - Brand Improvement Image 2" />
+              <img src="Images PJ 2/3.png" alt="Project - Brand Improvement Image 3" />
+              <img src="Images PJ 2/4.png" alt="Project - Brand Improvement Image 4" />
+              <img src="Images PJ 2/5.png" alt="Project - Brand Improvement Image 5" />
+              <img src="Images PJ 2/6.png" alt="Project - Brand Improvement Image 6" />
+              <img src="Images PJ 2/7.png" alt="Project - Brand Improvement Image 7" />
+              <img src="Images PJ 2/8.png" alt="Project - Brand Improvement Image 8" />
+              <img src="Images PJ 2/9.png" alt="Project - Brand Improvement Image 9" />
+            </div>
+            <button class="nav left">&lt;</button>
+            <button class="nav right">&gt;</button>
+          </div>
+          <div class="work-content">
+            <h3>Brand Improvement :</h3>
+            <p>With Perfect Marketing Strategy Hospital Increases Brand Value.</p>
+          </div>
+        </div>
+
+
+        <div class="work-card">
+          <div class="slider-container">
+            <div class="slider">
+              <img src="Images PJ 3/1.png" alt="Project - Advertising Strategy Image 1" />
+              <img src="Images PJ 3/2.png" alt="Project - Advertising Strategy Image 2" />
+              <img src="Images PJ 3/3.png" alt="Project - Advertising Strategy Image 3" />
+              <img src="Images PJ 3/4.png" alt="Project - Advertising Strategy Image 4" />
+              <img src="Images PJ 3/5.png" alt="Project - Advertising Strategy Image 5" />
+              <img src="Images PJ 3/6.png" alt="Project - Advertising Strategy Image 6" />
+              <img src="Images PJ 3/7.png" alt="Project - Advertising Strategy Image 7" />
+            </div>
+            <button class="nav left">&lt;</button>
+            <button class="nav right">&gt;</button>
+          </div>
+          <div class="work-content">
+            <h3>Advertising Strategy :</h3>
+            <p>Driving Patients and Public Attention towards our Hospital.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('.work-card').forEach(card => {
+      const slider = card.querySelector('.slider');
+      const images = slider.querySelectorAll('img');
+      const leftBtn = card.querySelector('.nav.left');
+      const rightBtn = card.querySelector('.nav.right');
+      let index = 0;
+  
+      const updateSlider = () => {
+        slider.style.transform = `translateX(-${index * 100}%)`;
+      };
+  
+      leftBtn.addEventListener('click', () => {
+        // Block backward if already on first image
+        if (index === 0) return;
+        index--;
+        updateSlider();
+      });
+  
+      rightBtn.addEventListener('click', () => {
+        if (index < images.length - 1) {
+          index++;
+          updateSlider();
+        }
+      });
+  
+      // Swipe support
+      let startX = 0;
+      let endX = 0;
+  
+      slider.addEventListener('touchstart', e => {
+        startX = e.touches[0].clientX;
+      });
+  
+      slider.addEventListener('touchend', e => {
+        endX = e.changedTouches[0].clientX;
+        const diff = endX - startX;
+        if (Math.abs(diff) > 50) {
+          if (diff > 0 && index > 0) {
+            // Swipe right – only if not on first image
+            index--;
+            updateSlider();
+          } else if (diff < 0 && index < images.length - 1) {
+            // Swipe left – only if not on last image
+            index++;
+            updateSlider();
+          }
+        }
+      });
+  
+      // Initialize first image
+      updateSlider();
+    });
+  </script>
+  
+
+<section>
+  <a href="../index.html" class="services-button">HomePage</a>
+</section>
+
+</body>
+</html>

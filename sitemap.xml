@@ -4,36 +4,29 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
-  <loc>https://portfolio-inderjitsingh.github.io/Home/</loc>
+  <loc>https://portfolio-inderjitsingh.github.io/Work/</loc>
   <lastmod>2025-04-14T14:45:25+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://portfolio-inderjitsingh.github.io/Home/Pages/MyWork.html</loc>
+  <loc>https://portfolio-inderjitsingh.github.io/Work/MyWork/</loc>
   <lastmod>2025-04-14T14:45:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://portfolio-inderjitsingh.github.io/Home/Pages/error.html</loc>
+  <loc>https://portfolio-inderjitsingh.github.io/Work/Pages/error.html</loc>
   <lastmod>2025-04-14T14:45:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://portfolio-inderjitsingh.github.io/Home/Pages/Services.html</loc>
+  <loc>https://portfolio-inderjitsingh.github.io/Work/Skills/</loc>
   <lastmod>2025-04-14T14:45:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://portfolio-inderjitsingh.github.io/Home/Pages/About-Me.html</loc>
-  <lastmod>2025-04-14T14:45:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://portfolio-inderjitsingh.github.io/Home/index.html</loc>
+  <loc>https://portfolio-inderjitsingh.github.io/Work/AboutMe/</loc>
   <lastmod>2025-04-14T14:45:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
