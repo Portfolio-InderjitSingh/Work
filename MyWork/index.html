@@ -145,5 +145,12 @@
   <a href="../index.html" class="services-button">HomePage</a>
 </section>
 
+<script>
+  if (window.location.pathname.endsWith('index.html')) {
+    window.location.href = window.location.pathname.replace('index.html', '');
+  }
+</script>
+
+
 </body>
 </html>
